@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 2</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header, nav, footer {
+            background: orange;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: lightgreen;
+        }
+
+        main {
+            display: flex; /* bikin section & aside sejajar */
+        }
+
+        section {
+            flex: 3; /* lebih lebar */
+            background: #b19cd9;
+            padding: 20px;
+        }
+
+        article {
+            background: #f4a6a6;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+
+        aside {
+            flex: 1; /* lebih kecil dari section */
+            background: #8faadc;
+            padding: 20px;
+        }
+
+        footer {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Nama</th>
+            <th>Usia</th>
+        </tr>
+        <tr>
+            <td>Muhammad Rasyid</td>
+            <td>19 Tahun</td>
+        </tr>
+    </table>
+
+    <header>
+        <h1> < Header > </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FaQ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <h2>Youtube</h2>
+                <p>Youtube adalah website untuk memutar video.</p>
+            </article>
+
+            <article>
+                <h2>Google</h2>
+                <p>Google adalah search engine yang sering digunakan.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Tips:</h3>
+            <ul>
+                <li>Instal aplikasi</li>
+                <li>Ikuti petunjuk instalasi</li>
+            </ul>
+        </aside>
+    </main>
+
+
+    <footer>
+        <h4>Footer</h4>
+        <p>ini adalah footer</p>
+    </footer>
+</body>
+</html>
