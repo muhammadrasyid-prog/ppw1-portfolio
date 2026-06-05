@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengirim e-mail dari suatu form</title>
+</head>
+<body>
+    <form action="@" method="post" enctype="text/plain">
+        <h3>Form ini mengirim sebuah e-mail ke W3C.</h3>
+        Nama:<br>
+        <input type="text" name="name" value="Nama Anda" size="20" maxlength="20">
+        <br>
+        Mail:<br>
+        <input type="text" name="mail" placeholder="Alamat e-mail Anda" size="20">
+        <br>
+        Komentar:<br>
+        <textarea type="text" name="komentar" rows="4" cols="50">Komentar Anda</textarea>
+        <br>
+        tambahan:<br>
+        <input type="text" name="tambahan" value="Tambahan Anda" size="40" readonly>
+        <br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

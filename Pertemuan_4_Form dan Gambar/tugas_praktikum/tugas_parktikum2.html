@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Pendaftaran</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e7ecee;
+    }
+
+    .form-container {
+        /* background-color: #7a7a7a; */
+        padding: 20px;
+        /* border-top: 5px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-fieldset {
+        background-color: #ffffff;
+        padding: 20px;
+        border-top: 10px solid #333;
+        width: 600px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    .img-center {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .form-input:focus {
+        border-color: #4CAF50;
+        outline: none;
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<body>
+
+    <div class="form-container">
+        <fieldset class="form-fieldset">
+            <h2>Form Pendaftaran Workshop Web</h2>
+
+            <!-- gambar di atas form -->
+            <div class="img-center">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" width="400">
+            </div>
+
+            <form>
+
+                <fieldset>
+                    <legend>Data Peserta</legend>
+
+                    Nama :
+                    <br>
+                    <input class="form-input" type="text" name="nama" placeholder="Masukkan Nama Anda" required>
+
+                    <br><br>
+
+                    Email :
+                    <br>
+                    <input class="form-input" type="email" name="email" placeholder="Alamat e-mail Anda"
+                        placeholder="Masukkan Nam Anda" required>
+
+                    <br><br>
+
+                    Jenis Kelamin :
+                    <br>
+                    <label>
+                        <input type="radio" name="jk" value="laki" required> Laki-laki
+                    </label>
+
+                    <label>
+                        <input type="radio" name="jk" value="perempuan"> Perempuan
+                    </label>
+
+                    <br><br>
+
+                    <label>Upload Foto Peserta:</label>
+                    <br>
+                    <input type="file" accept="image/*">
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Pilihan Workshop</legend>
+
+                    Topik :
+                    <select required>
+
+                        <optgroup label="Programming">
+                            <option>HTML CSS</option>
+                            <option>JavaScript</option>
+                            <option>Python</option>
+
+                        </optgroup>
+
+                        <optgroup label="Design">
+                            <option>UI Design</option>
+                            <option>Figma</option>
+
+                        </optgroup>
+
+                    </select>
+
+                </fieldset>
+
+                <br>
+
+                <input class="submit-btn" type="submit" value="Daftar" onclick="alert('Pendaftaran Berhasil dikirim!')">
+                <!-- <button type="button" value="Daftar" onclick="alert('Hello World!')">Submit</button> -->
+
+            </form>
+        </fieldset>
+    </div>
+
+</body>
+
+</html>
