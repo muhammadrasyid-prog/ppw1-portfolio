@@ -20,7 +20,7 @@ Portfolio ini merupakan rekam jejak digital dari hasil pembelajaran praktikum ku
 
 ## Link Demo Live
 Aplikasi web hasil praktikum (fitur CRUD terintegrasi) dapat diakses secara langsung melalui tautan di bawah ini:
-[**Kunjungi Live Demo Aplikasi di InfinityFree**](https://ubah-dengan-link-infinityfree-kamu.infinityfreeapp.com)
+[**Kunjungi Live Demo Aplikasi di InfinityFree**](http://ppw1-portfolio-rasyid.infinityfree.me/)
 
 ---
 
