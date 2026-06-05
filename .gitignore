@@ -30,3 +30,7 @@ koneksi.php
 config.php
 database.php
 *.sql
+
+# asset
+about.png
+hero.png
