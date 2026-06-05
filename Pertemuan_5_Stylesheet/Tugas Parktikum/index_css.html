@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Belajar HTML & CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+    }
+
+    header {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav {
+        background: #34495e;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        background: #e74c3c;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        background: #c0392b;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    .content {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    article {
+        margin-bottom: 20px;
+    }
+
+    .indent {
+        text-indent: 40px;
+    }
+
+    .line {
+        line-height: 1.8;
+    }
+
+    footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>Belajar Web Development</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Artikel</a>
+        <a href="#">Tutorial</a>
+        <a href="#">Kontak</a>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <h2>Belajar HTML & CSS dari Dasar</h2>
+            <p>Membuat website sederhana menggunakan Semantic HTML dan CSS.</p>
+            <a href="#" class="btn">Mulai Belajar</a>
+        </section>
+
+        <section class="content">
+            <h2>Artikel Terbaru</h2>
+
+            <article>
+                <h3>Pengenalan HTML</h3>
+                <p class="indent">
+                    HTML merupakan bahasa markup yang digunakan untuk membuat struktur halaman web.
+                    Dengan HTML kita dapat menambahkan teks, gambar, link, dan berbagai elemen lainnya.
+                </p>
+            </article>
+
+            <article>
+                <h3>Pengenalan CSS</h3>
+                <p class="line">
+                    CSS digunakan untuk mengatur tampilan website seperti warna, ukuran teks,
+                    layout, dan jarak antar elemen agar halaman web terlihat lebih menarik.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright © 2026 Praktikum Web</p>
+    </footer>
+
+</body>
+
+</html>
