@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Navbar</title>
+</head>
+<style>
+    nav {
+        background-color: gray;
+        padding: 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    nav a:hover {
+        color: rgb(102, 44, 44);
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+    }
+
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
