@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation & Transition — Komponen Interaktif</title>
+</head>
+<style>
+    :root {
+        --primary: #6c63ff;
+        --primary-dark: #342cd8;
+        --accent: teal;
+        --text: #111;
+        --shadow: rgba(0, 0, 0, .1);
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 20px;
+        margin: 50px auto;
+    }
+
+    button {
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-1 {
+        background: var(--primary);
+        color: white;
+    }
+
+    .btn-1:hover {
+        background: var(--primary-dark);
+    }
+
+    .btn-2 {
+        background: white;
+        color: black;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    }
+
+    .btn-2:hover {
+        box-shadow: 0 0 30px grey;
+        transform: translateY(-8px) scale(1.03);
+    }
+
+    .btn-3 {
+        background: white;
+        color: black;
+        border: 2px solid var(--accent);
+    }
+
+    .btn-3:hover {
+        background: var(--accent);
+        color: white;
+        box-shadow: 0 0 30px grey;
+        transform: translateY(-4px);
+    }
+
+    .box {
+        display: grid;
+        place-items: center;
+        gap: 14px;
+        min-height: 185px;
+        padding: 25px 10px;
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 10px 25px var(--shadow);
+    }
+
+    .box p {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--text);
+        letter-spacing: 0.2px;
+    }
+
+    .ring {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 10px solid #d3d3d3;
+        border-top-color: #000;
+        border-right-color: #000;
+        animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        background: var(--primary);
+        color: white;
+        border-radius: 50%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .card:hover {
+        /* animation: spin 1s linear infinite; */
+        transform: rotateY(180deg);
+    }
+</style>
+
+<body>
+    <button class="btn-1">Hover Warna</button>
+    <button class="btn-2">Hover Zoom</button>
+    <button class="btn-3">Hover Naik</button>
+
+    <div class="box">
+        <div class="ring"></div>
+        <p>Loading....</p>
+    </div>
+
+    <div class="fade-in">
+        <strong>FadeIn Animation</strong>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="card">🃏 Card</div>
+</body>
+
+</html>

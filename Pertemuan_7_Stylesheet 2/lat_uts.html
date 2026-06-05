@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        top: 0;
+        z-index: 1;
+        background: aqua;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 16px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            flex-direction: column;
+            height: auto;
+        }
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <strong>OKEEEEE</strong>
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

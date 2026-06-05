@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Website Sederhana</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#eee;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    background:#27a9c6;
+    color:white;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+/* NAVIGATION */
+nav{
+    background:#1f8da6;
+    padding:10px;
+    margin-top:15px;
+    border-radius:10px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+/* MAIN */
+.main{
+    display:flex;
+    gap:20px;
+    margin-top:15px;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:25%;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.sidebar h3{
+    margin-bottom:10px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin:8px 0;
+}
+
+/* CONTENT */
+.content{
+    flex:1;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.content h2{
+    margin-bottom:10px;
+}
+
+.content p{
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+    background:#27a9c6;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:15px;
+    border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<h1>Website Teknologi</h1>
+<p>Belajar HTML dan CSS</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Artikel</a></li>
+<li><a href="#">Tutorial</a></li>
+<li><a href="#">About</a></li>
+</ul>
+</nav>
+
+<div class="main">
+
+<div class="sidebar">
+<h3>Kategori</h3>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Database</li>
+<li>Web Design</li>
+</ul>
+
+<h3 style="margin-top:20px;">Artikel Populer</h3>
+<ul>
+<li>Belajar HTML Dasar</li>
+<li>Mengenal CSS Layout</li>
+<li>Flexbox untuk Pemula</li>
+</ul>
+</div>
+
+<div class="content">
+<h2>Belajar Layout Website</h2>
+
+<p>
+Layout website adalah struktur dasar dari sebuah halaman web yang
+mengatur posisi header, navigation, sidebar, content, dan footer.
+Dengan layout yang baik, tampilan website menjadi lebih rapi dan mudah digunakan.
+</p>
+
+<p>
+Pada contoh ini kita menggunakan CSS Flexbox untuk membuat
+sidebar dan content sejajar secara horizontal.
+Flexbox memudahkan pengaturan layout tanpa perlu menggunakan float.
+</p>
+
+<p>
+Layout seperti ini sering digunakan pada website blog,
+portal berita, maupun dashboard aplikasi web.
+</p>
+
+</div>
+
+</div>
+
+<footer>
+<p>Copyright © 2026 | Website Teknologi</p>
+</footer>
+
+</div>
+
+</body>
+</html>

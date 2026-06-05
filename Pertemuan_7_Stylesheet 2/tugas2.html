@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox — Halaman Landing Sederhana</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(239, 239, 239);
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        height: 50px;
+        background: #6c63ff;
+        color: white;
+    }
+
+    .navbar img {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 16px
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 60px 20px;
+    }
+
+    .hero-section img {
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .teks {
+        max-width: 500px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .desc {
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+    .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 1 200px;
+        max-width: 300px;
+        min-width: 150px;
+        background: white;
+        border-radius: 10px;
+        border: 2px;
+        border-color: black;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+
+    }
+
+    .card h3 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .card p {
+        font-size: 12px;
+        color: #777;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        background: #333;
+        color: white;
+        padding: 30px 20px;
+        flex-wrap: wrap;
+    }
+
+    .footer-col {
+        flex: 1 1 200px;
+    }
+
+    .footer h4 {
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+
+        .hero-section {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .navbar {
+            flex-direction: column;
+            height: auto;
+            padding: 10px;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer {
+            flex-direction: column;
+            text-align: center;
+        }
+
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <img src="logo.png" alt="">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-section">
+        <img src="fotobg.jpg" alt="">
+        <div class="teks">
+            <h1 class="title">
+                Hero Section
+            </h1>
+            <p class="desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, incidunt?
+            </p>
+        </div>
+    </div>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>🚀 Card 1</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card">
+            <h3>🚀 Card 2</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card">
+            <h3>🚀 Card 3</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-col">
+            <h4>About</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Links</h4>
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Email: example@mail.com</p>
+            <p>Phone: 08784528364</p>
+        </div>
+    </footer>
+</body>
+
+</html>

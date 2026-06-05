@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position — Layout Kartu Profil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            width: 280px;
+            height: 350px;
+            /* background-color: #666; */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            margin: 50px auto;
+        }
+
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .btn-links {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: aqua;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .status-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .navbar {
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            top: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 16px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <strong>Profile Card</strong>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- tambahkan foto profil -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN7LQyVsGMjbXTF7nZqyyuJUGvCM5OeNwGmw&s" alt="Foto Profil" class="profile-photo">
+        <h2 class="name">David Beckham</h2>
+        <p class="description">Mahasiswa Teknik Informatika, suka coding dan teknologi.</p>
+        <div class="btn-links">
+            <button class="btn">Follow</button>
+            <button class="btn">Message</button>
+        </div>
+        <div class="status-badge">Online 🟢</div>
+    </div>
+    <div class="container">
+        <!-- tambahkan foto profil -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN7LQyVsGMjbXTF7nZqyyuJUGvCM5OeNwGmw&s" alt="Foto Profil" class="profile-photo">
+        <h2 class="name">David Beckham</h2>
+        <p class="description">Mahasiswa Teknik Informatika, suka coding dan teknologi.</p>
+        <div class="status-badge">Online 🟢</div>
+    </div>
+    <div class="container">
+        <!-- tambahkan foto profil -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN7LQyVsGMjbXTF7nZqyyuJUGvCM5OeNwGmw&s" alt="Foto Profil" class="profile-photo">
+        <h2 class="name">David Beckham</h2>
+        <p class="description">Mahasiswa Teknik Informatika, suka coding dan teknologi.</p>
+        <div class="status-badge">Online 🟢</div>
+    </div>
+
+    <a href="#" class="back-to-top">Back to Top</a>
+</body>
+</html>
